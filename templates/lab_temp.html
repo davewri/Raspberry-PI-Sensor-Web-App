@@ -1,0 +1,35 @@
+<html> 
+  <meta charset="utf-8"> 
+  <title>Lab Conditions by Sensor Hat</title> 
+  <meta http-equiv="refresh" content="10"> 
+  <meta name="description" content="Lab conditions - Sensor Hat"> 
+  <meta name="author" content="David Wright"> 
+  <!-- Mobile Specific Metas 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <!-- FONT 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> 
+  <!-- CSS 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <link rel="stylesheet" href="/static/css/normalize.css"> 
+  <link rel="stylesheet" href="/static/css/skeleton.css"> 
+  <!-- Favicon 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <link rel="icon" type="image/png" href="/static/images/favicon.png"> 
+</head> 
+  <body> 
+    <div class="container"> 
+      <div class="row"> 
+        <div class="two-third column" style="margin-top: 5%"> 
+            <h1>Reading sensor values from the study</h1> 
+            <h2>Current temperature is: {{"{0:0.1f}".format(temp) }}°C</h2>
+	    <h2>Current pressure is: {{"{0:0.1f}".format(pres) }}</h2>
+	    <h2>Current humidity is: {{"{0:0.1f}".format(hum) }}</h2>
+            <p>This page refreshes every 10 seconds</p> 
+        </div>    
+      </div> 
+    </div>            
+  </body>   
+</html> 
+
